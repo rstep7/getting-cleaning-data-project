@@ -1,13 +1,13 @@
 # CodeBook.md
 
 ## Input Data Set
-- features_info.txt: Shows information about the variables used on the feature vector.
-- features.txt: List of all features.
-- activity_labels.txt: Links the class labels with their activity name.
-- X_train.txt: Training set.
-- y_train.txt: Training labels.
-- X_test.txt: Test set.
-- y_test.txt: Test labels.
+- features_info.txt : Shows information about the variables used on the feature vector.
+- features.txt : List of all features.
+- activity_labels.txt : Links the class labels with their activity name.
+- X_train.txt : Training set.
+- y_train.txt : Training labels.
+- X_test.txt : Test set.
+- y_test.txt : Test labels.
 
 
 ## Output Data Set
@@ -15,12 +15,12 @@ tidyDataSet.txt : Final data set
 
 
 ## Variables
-dataFilepath : path of the datafile to load
-y_test,x_test,subject_test,y_train,x_train,subject_train : used to store data loaded from datafile
-ctest, ctrain : store combined data sets column wise
-cdf : final combined raw data set of test and train data
-gb : cdf data set after grouped by subject & activity
-act_sub_mean : summarized mean and final tidy data set to be sent to instructor
+- dataFilepath : path of the datafile to load
+- y_test,x_test,subject_test,y_train,x_train,subject_train : used to store data loaded from datafile
+- ctest, ctrain : store combined data sets column wise
+- cdf : final combined raw data set of test and train data
+- gb : cdf data set after grouped by subject & activity
+- act_sub_mean : summarized mean and final tidy data set to be sent to instructor
 
 
 ## Functions
