@@ -6,26 +6,26 @@ rm(y_test,x_test,subject_test,y_train,x_train,subject_train)
 rm(ctest,ctrain,cdf)
 
 ## Load Data Sets
-dataFilepath <- "./UCI HAR Dataset/test/subject_test.txt"
+dataFilepath <- "./subject_test.txt"
 subject_test <- tbl_df(read.table(dataFilepath))
 subject_test <- rename(subject_test, subject=V1)
 
-dataFilepath <- "./UCI HAR Dataset/test/y_test.txt"
+dataFilepath <- "./y_test.txt"
 y_test <- tbl_df(read.table(dataFilepath))
 y_test <- rename(y_test, activity=V1)
 
-dataFilepath <- "./UCI HAR Dataset/test/X_test.txt"
+dataFilepath <- "./X_test.txt"
 x_test <- tbl_df(read.table(dataFilepath))
 
-dataFilepath <- "./UCI HAR Dataset/train/subject_train.txt"
+dataFilepath <- "./subject_train.txt"
 subject_train <- tbl_df(read.table(dataFilepath))
 subject_train <- rename(subject_train, subject=V1)
 
-dataFilepath <- "./UCI HAR Dataset/train/y_train.txt"
+dataFilepath <- "./y_train.txt"
 y_train <- tbl_df(read.table(dataFilepath))
 y_train <- rename(y_train, activity=V1)
 
-dataFilepath <- "./UCI HAR Dataset/train/X_train.txt"
+dataFilepath <- "./X_train.txt"
 x_train <- tbl_df(read.table(dataFilepath))
 
 ############################
