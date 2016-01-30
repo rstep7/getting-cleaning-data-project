@@ -181,5 +181,5 @@ gb <- group_by(cdf,subject,activity)
 act_sub_mean <- summarize_each(gb,funs(mean))
 
 # Write out the tidy data set
-write.table(act_sub_mean, './tidyDataSet.txt',row.names=TRUE,sep='\t');
+write.table(act_sub_mean, './tidyDataSet.txt',row.names=FALSE,sep='\t')
 
